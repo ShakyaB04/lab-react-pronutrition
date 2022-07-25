@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+  background: #fffbe4;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0e0029; 
+} 
+::-webkit-scrollbar-thumb {
+  background: #ffd000; 
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffee00; 
+}
+
+.header {
+  background: #28043d;
+  color: #ffe600;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 10px 50px;
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-container div{
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0 30px;
+  line-height: 50px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px #ffd000;
+  letter-spacing: 2px;
+  margin-left: 105px;
+  margin-bottom: 15px;
+}
+
+.search-container div:hover{
+  font-size: 50px;
+  text-shadow: 4px 4px 4px black;
+  color: #ffd000 ;
+}
+
+.search-container input{
+  width: 30vw;
+  font-size: 20px;
+  padding: 6px 14px;
+  background: #0e0029;
+  color: #ffd700;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.search-container input::placeholder{
+  color: #fff4b7;
+  font-weight: 200;
+  letter-spacing: 2px;
+}
+
+.count{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.count input[type=number]{
+  border: 1px solid #0e0029;
+  outline: none;
+  padding: 2px;
+  padding-left: 14px;
+  text-align: center;
+  width: 40px;
+  border-radius: 5px;
+  font-size: 30px;
+  margin-right: 6px;
+  background-color: #0e0029;
+  color: #ffd000;
+  text-shadow: 2px 4px #393938;
+}
+
+.count button{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  align-self: center;
+  font-weight: 500;
+  font-size: 30px;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background: #ffd000;
+  border: 1px solid #ffd000;
+  color: #28043d;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.count button:hover{
+  background: #fff2b7;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95vw;
+}
+
+.left {
+  width: 80vw;
+  max-width: 60vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 99;
+}
+
+.fruit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  background: white;
+  border-radius: 8px;
+  border: 2px solid #0e0029;
+  box-shadow: 2px 1px 4px #0e0029;
+}
+
+.fruit img {
+  height: 200px;
+  width: 300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.count,.detail{
+  background-color:  #fffbe4;
+  width: 890px;
+  text-align: center;
+}
+
+.count{
+  display: flex;
+  justify-content: center;
+}
+
+.detail h1{
+  color: #28043d;
+  padding: 20px 0 0 0;
+}
+
+.detail h4 {
+  color: #28043d;
+  text-align: center;
+  font-weight: 400;
+  padding: 0 0 10px 0;
+}
+
+.right {
+  width: 100vw;
+  z-index: 0;
+  background: #0e0029;
+  min-width: 20vw;
+  margin-top: 10px;
+  height: fit-content;
+  width: fit-content;
+  color: #ffd000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 5px #ffbf0e;
+}
+
+.right h1 span{
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  font-weight: 200;
+  text-align: right;
+}
+
+.item {
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  z-index: 1 !important;
+}
+
+.item button{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  align-self: center;
+  font-weight: 900;
+  font-size: 20px;
+  outline: none;
+  width: 50px;
+  border-radius: 5px;
+  background: #ffd000;
+  border: 1px solid #ffd000;
+  color: #28043d;
+  transition: all 0.3s ease;
+  margin-left: 30px;
+  cursor: pointer;
+}
